@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4175160400,
+              "duration": 4466373300,
               "status": "passed"
             },
             "line": 6,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-18T07:45:10.536Z",
+        "start_timestamp": "2022-08-19T05:15:32.733Z",
         "before": [
           {
             "result": {
-              "duration": 4088492800,
+              "duration": 4386956100,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 26,
-        "name": "Wrong credentials input",
+        "line": 30,
+        "name": "Wrong email in forget password module",
         "description": "",
-        "id": "login-functionality;wrong-credentials-input;;2",
+        "id": "login-functionality;wrong-email-in-forget-password-module",
         "after": [
           {
             "result": {
-              "duration": 1479491300,
+              "duration": 1165615100,
               "status": "passed"
             },
             "match": {
@@ -52,231 +52,47 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6355778200,
+              "duration": 534682500,
               "status": "passed"
             },
-            "line": 21,
-            "name": "user enters wrong \"driver_username\" and \"fake_negScenario_password\"",
+            "line": 31,
+            "name": "User click forget passsword button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"driver_username\"",
-                  "offset": 18
-                },
-                {
-                  "val": "\"fake_negScenario_password\"",
-                  "offset": 40
-                }
-              ],
-              "location": "com.vytrack.step_definitions.login_StepDef.userEntersWrongAnd(java.lang.String,java.lang.String)"
+              "location": "com.vytrack.step_definitions.login_StepDef.userClickForgetPassswordButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 141910500,
+              "duration": 1328429900,
               "status": "passed"
             },
-            "line": 23,
-            "name": "user should see error message",
-            "match": {
-              "location": "com.vytrack.step_definitions.login_StepDef.userShouldSeeErrorMessage()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          },
-          {
-            "name": "@NegWip"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7796456700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User enter login module",
-            "match": {
-              "location": "com.vytrack.step_definitions.login_StepDef.user_enter_login_module()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-08-18T07:45:27.015Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2942976000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Wrong credentials input",
-        "description": "",
-        "id": "login-functionality;wrong-credentials-input;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 920046800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 7045642400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user enters wrong \"sales_manager_username\" and \"fake_negScenario_password\"",
+            "line": 32,
+            "name": "User enter wrong \"\u003cusername\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sales_manager_username\"",
-                  "offset": 18
-                },
-                {
-                  "val": "\"fake_negScenario_password\"",
-                  "offset": 47
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 17
                 }
               ],
-              "location": "com.vytrack.step_definitions.login_StepDef.userEntersWrongAnd(java.lang.String,java.lang.String)"
+              "location": "com.vytrack.step_definitions.login_StepDef.userEnterWrong(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 150907000,
+              "duration": 193881700,
               "status": "passed"
             },
-            "line": 23,
-            "name": "user should see error message",
+            "line": 33,
+            "name": "User should see wrong username error message",
             "match": {
-              "location": "com.vytrack.step_definitions.login_StepDef.userShouldSeeErrorMessage()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          },
-          {
-            "name": "@NegWip"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3983192000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User enter login module",
-            "match": {
-              "location": "com.vytrack.step_definitions.login_StepDef.user_enter_login_module()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-08-18T07:45:45.886Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2474475400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "Wrong credentials input",
-        "description": "",
-        "id": "login-functionality;wrong-credentials-input;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 1492201600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 6309318400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user enters wrong \"store_manager_username\" and \"fake_negScenario_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"store_manager_username\"",
-                  "offset": 18
-                },
-                {
-                  "val": "\"fake_negScenario_password\"",
-                  "offset": 47
-                }
-              ],
-              "location": "com.vytrack.step_definitions.login_StepDef.userEntersWrongAnd(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 97967500,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user should see error message",
-            "match": {
-              "location": "com.vytrack.step_definitions.login_StepDef.userShouldSeeErrorMessage()"
+              "location": "com.vytrack.step_definitions.login_StepDef.userShouldSeeWrongUsernameErrorMessage()"
             },
             "keyword": "Then "
           }

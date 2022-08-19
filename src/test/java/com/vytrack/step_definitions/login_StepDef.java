@@ -1,5 +1,6 @@
 package com.vytrack.step_definitions;
 
+import com.github.javafaker.Faker;
 import com.vytrack.pages.BasePage;
 import com.vytrack.pages.LoginPage;
 import com.vytrack.utilities.ConfigurationReader;
@@ -59,5 +60,29 @@ public class login_StepDef extends BasePage {
     @Then("user should see error message")
     public void userShouldSeeErrorMessage() {
         Assert.assertTrue(loginPage.errorMsgInvalidLogin.isDisplayed());
+    }
+
+
+
+
+
+
+    @And("User click forget passsword button")
+    public void userClickForgetPassswordButton() {
+        loginPage.forgetYourPassBtn.click();
+    }
+
+    @And("User enter wrong {string}")
+    public void userEnterWrong(String fakeUser) {
+        Faker faker = new Faker();
+        fakeUser = faker.name().username();
+        loginPage.forgetYourPassInputUsername.sendKeys(fakeUser);
+        loginPage.forgetYourPassSubmitBtn.click();
+    }
+
+    @Then("User should see wrong username error message")
+    public void userShouldSeeWrongUsernameErrorMessage() {
+    Assert.assertTrue(loginPage.forgetYourPassErrorMsg.isDisplayed());
+
     }
 }

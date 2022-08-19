@@ -16,4 +16,16 @@ public class LoginPage extends BasePage {
 
     @FindBy(xpath = "//div[.='Invalid user name or password.']")
     public WebElement errorMsgInvalidLogin;
+
+    @FindBy(xpath = "//a[.='Forgot your password?']")
+    public WebElement forgetYourPassBtn;
+
+    @FindBy(id="prependedInput")
+    public WebElement forgetYourPassInputUsername;
+
+    @FindBy(xpath = "//div[@class ='alert alert-error']")
+    public WebElement forgetYourPassErrorMsg;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement forgetYourPassSubmitBtn;
 }
