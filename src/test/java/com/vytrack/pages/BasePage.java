@@ -75,6 +75,51 @@ public abstract class BasePage {
     @FindBy(linkText = "Logout")
     public  WebElement    userNameDropDownMenuLogout;
 
+    @FindBy (xpath = "//span[.='Vehicles']")
+    public WebElement fleetVehicles;
+
+    @FindBy (xpath = "//span[.='Vehicle Odometer']")
+    public WebElement fleetVehiclesOdometer;
+
+    @FindBy (xpath = "//span[.='Vehicle Costs']")
+    public WebElement fleetVehicleCosts;
+
+    @FindBy (xpath = "//span[.='Vehicle Contracts']")
+    public WebElement fleetVehicleContracts;
+
+    @FindBy (xpath = "//span[.='Vehicles Fuel Logs']")
+    public WebElement fleetVehicleFuelLogs;
+
+    @FindBy (xpath = "//span[.='Vehicle Services Logs']")
+    public WebElement fleetVehicleServiceLogs;
+
+    @FindBy (xpath = "//span[.='Vehicles Model']")
+    public WebElement fleetVehicleModel;
+
+    @FindBy(xpath = "//span[.='Contacts']")
+    public WebElement costumersContact;
+
+    @FindBy(xpath = "//span[.='Jobs']")
+    public WebElement systemJobs;
+
+    @FindBy(xpath = "//span[.='Menus']")
+    public WebElement systemMenus;
+
+    @FindBy(xpath = "//span[.='System Calendars']")
+    public WebElement systemSystemCalendars;
+
+    @FindBy (xpath = "//span[.='Calendar Events']")
+    public WebElement activitiesCalendarEvents;
+
+    @FindBy(xpath = "//a[.='List']")
+    public WebElement listOfContacts;
+
+    @FindBy(xpath = "//a[.='Create Contact']")
+    public WebElement createContact;
+
+
+
+
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
