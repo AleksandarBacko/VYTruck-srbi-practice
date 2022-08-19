@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="VYTruck-srbi-practice" options="--add-modules java.base" />
+      <module name="VYTruck-srbi-practice" options="" />
     </option>
   </component>
 </project>
