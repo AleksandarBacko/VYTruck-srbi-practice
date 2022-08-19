@@ -16,7 +16,7 @@ Feature: Login functionality
   Scenario: Login as a storeManager
     And User enter storeManager credentials and click login button
     Then User should be on dashboard page
-@NegWip
+
   Scenario Outline: Wrong credentials input
     And user enters wrong "<username>" and "<password>"
 
@@ -26,5 +26,11 @@ Feature: Login functionality
       | driver_username        | fake_negScenario_password |
       | sales_manager_username | fake_negScenario_password |
       | store_manager_username | fake_negScenario_password |
+  @NegWip
+  Scenario: Wrong email in forget password module
+    And User click forget passsword button
+    And User enter wrong "<username>"
+    Then User should see wrong username error message
+
 
 
