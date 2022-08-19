@@ -9,55 +9,6 @@ formatter.feature({
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "Wrong credentials input",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@NegWip"
-    }
-  ]
-});
-formatter.step({
-  "name": "user enters wrong \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user should see error message",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "driver_username",
-        "fake_negScenario_password"
-      ]
-    },
-    {
-      "cells": [
-        "sales_manager_username",
-        "fake_negScenario_password"
-      ]
-    },
-    {
-      "cells": [
-        "store_manager_username",
-        "fake_negScenario_password"
-      ]
-    }
-  ]
-});
 formatter.background({
   "name": "",
   "description": "",
@@ -77,9 +28,9 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Wrong credentials input",
+  "name": "Wrong email in forget password module",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@wip"
@@ -90,129 +41,31 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user enters wrong \"driver_username\" and \"fake_negScenario_password\"",
+  "name": "User click forget passsword button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.login_StepDef.userEntersWrongAnd(java.lang.String,java.lang.String)"
+  "location": "com.vytrack.step_definitions.login_StepDef.userClickForgetPassswordButton()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should see error message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.login_StepDef.userShouldSeeErrorMessage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enter login module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.login_StepDef.user_enter_login_module()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Wrong credentials input",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    },
-    {
-      "name": "@NegWip"
-    }
-  ]
-});
-formatter.step({
-  "name": "user enters wrong \"sales_manager_username\" and \"fake_negScenario_password\"",
+  "name": "User enter wrong \"\u003cusername\u003e\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.login_StepDef.userEntersWrongAnd(java.lang.String,java.lang.String)"
+  "location": "com.vytrack.step_definitions.login_StepDef.userEnterWrong(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should see error message",
+  "name": "User should see wrong username error message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.login_StepDef.userShouldSeeErrorMessage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enter login module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.login_StepDef.user_enter_login_module()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Wrong credentials input",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    },
-    {
-      "name": "@NegWip"
-    }
-  ]
-});
-formatter.step({
-  "name": "user enters wrong \"store_manager_username\" and \"fake_negScenario_password\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.login_StepDef.userEntersWrongAnd(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should see error message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.login_StepDef.userShouldSeeErrorMessage()"
+  "location": "com.vytrack.step_definitions.login_StepDef.userShouldSeeWrongUsernameErrorMessage()"
 });
 formatter.result({
   "status": "passed"
