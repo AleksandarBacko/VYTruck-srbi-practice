@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
 
+    //djole papan
+
     @FindBy(id="menu-item-849")
     public WebElement loginBtn;
 
